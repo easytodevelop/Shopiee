@@ -1,0 +1,107 @@
+[{ 
+		"sid": 101, 
+		"sfirst": "Chuan", 
+		"slast": "Xie",
+		"scollege": "RJT",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Hongkong", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":10, "s2":20, "s3":30},
+		"svote" : 5,
+		"simage":"images/student1.jpg"
+		},
+		
+		{ 
+		"sid": 102, 
+		"sfirst": "Yanda", 
+		"slast": "Wu",
+		"scollege": "Oxford",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Beijing", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":20, "s2":50, "s3":90},
+		"svote" : 5,
+		"simage":"images/student1.jpg"
+		},
+		
+		{ 
+		"sid": 103, 
+		"sfirst": "Zeyu", 
+		"slast": "Li",
+		"scollege": "Harvard",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Shanghai", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":30, "s2":60, "s3":50},
+		"svote" : 2,
+		"simage":"images/student1.jpg"
+		},
+		
+		{ 
+		"sid": 104, 
+		"sfirst": "Shuting", 
+		"slast": "Lang",
+		"scollege": "MIT",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Guangzhou", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":20, "s2":90, "s3":30},
+		"svote" : 1,
+		"simage":"images/student1.jpg"
+		},
+		
+		{ 
+		"sid": 105, 
+		"sfirst": "Anna", 
+		"slast": "Xianna",
+		"scollege": "Stanford,Hongkong",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Shenzhen", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":50, "s2":70, "s3":60},
+		"svote" : 5,
+		"simage":"images/student1.jpg"
+		},
+		
+		
+		{ 
+		"sid": 106, 
+		"sfirst": "Chenyan", 
+		"slast": "Xhang",
+		"scollege": "IIT",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Shenyang", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":10, "s2":50, "s3":80},
+		"svote" : 7,
+		"simage":"images/student1.jpg"
+		},
+		
+		{ 
+		"sid": 107, 
+		"sfirst": "Yingie", 
+		"slast": "zhou",
+		"scollege": "Columbia",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Hongkong", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":40, "s2":80, "s3":50},
+		"svote" : 15,
+		"simage":"images/student1.jpg"
+		},
+		
+		{ 
+		"sid": 108, 
+		"sfirst": "Yiling", 
+		"slast": "Ying",
+		"scollege": "UIC",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Hongkong", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":20, "s2":10, "s3":20},
+		"svote" : 5,
+		"simage":"images/student1.jpg"
+		},
+		{ 
+		"sid": 109, 
+		"sfirst": "Yashoda", 
+		"slast": "Sundar",
+		"scollege": "UIC",
+		"smain" : "Computers",
+		"saddress": {"sdresplace":"Illunois", "sdrespincode":550072, "sdresscountry":"China", "sdresstreet":"queen street"}, 
+		"smarks": {"s1":20, "s2":10, "s3":20},
+		"svote" : 5,
+		"simage":"images/student1.jpg"
+		}]		

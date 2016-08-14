@@ -1,0 +1,115 @@
+<div class="container">
+
+<div class="row bag_border">
+<div class="col-xs-10"><h1>YOUR SHOPPING BAG</h1></div>
+<div class="col-xs-2 hideinhigh"><h3>{{shopinfo.length}} ITEMS</h3></div>
+</div>
+
+<div class="row  chd_border chd_height hideinlow">
+	<div class="col-md-2 col-sm-6">{{shopinfo.length}} ITEMS</div>
+	
+	<div class="col-md-10 col-sm-6">
+	<div class="row">
+	<div class="col-md-6"></div>
+	<div class="col-md-2">Size</div>
+	<div class="col-md-2">Qty</div>
+	<div class="col-md-2">Price</div>
+	</div>
+	</div>
+</div>
+
+
+<section>
+<article ng-repeat="plist in shopinfo">
+<div class="row item_pdng ">
+
+
+<div class="col-md-2 col-sm-3 col-xs-4"><img src="images/T1.jpg" /></div>
+
+<div class="col-md-10 col-sm-9 col-xs-8">
+		<div class="row">
+			<div class="col-md-6">
+				<h2 ng-click="openFromLeft()">{{ plist.p_name | uppercase }} {{plist.p_variation | uppercase}}</h2>
+				<p>Style #: {{ plist.p_style }}</p>
+				<p>Colour: {{plist.p_selected_color.name}}</p>
+				<ul class="hideinlow item_menu"><li ng-click="openFromLeft()">Edit |</li><li><i class="fa fa-times" aria-hidden="true"></i>Remove |</li><li>Save for Later</li></ul>
+			</div>
+			<div class="col-md-2"> <span class="hideinhigh">Size :</span> {{plist.p_selected_size.code}}</div>
+			<div class="col-md-2"> <span class="hideinhigh">Qty</span>  <input type="number" name="quantity" min="1" max="50" value="{{plist.p_quantity}}"></div>
+			<div class="col-md-2"><span style="color:#efefef;">{{plist.c_currency}}{{plist.p_originalprice}}</span> {{plist.c_currency}}{{plist.p_price}}</div>
+		</div>
+ 	
+</div> <!-- Close of item right content -->
+
+	
+</div> <!-- Close of item -->
+
+<div class="hideinhigh row">
+		<ul class="item_menu"><li ng-click="openFromLeft()">Edit |</li><li>Remove |</li><li>Save for Later</li></ul>
+	</div>	
+</article>
+</section>
+
+
+<section>
+
+<div class="row">
+	<div class="col-md-4 hideinlow">
+	<p>Need help or have questions?</p>
+	<p>Call Customer Service at  1-800-555-555</p>
+	<p>Chat with one of our stylists</p>
+	<p>See return & exchange policy</p>
+	</div>
+	
+	<div class="col-md-8 col-sm-12">
+		<div class="row promoborder">
+			<div class="col-sm-4 col-md-6 col-xs-12"><h3>ENTER PROMOTION CARD OR GIFT CARD</h3></div>
+			<div class="col-sm-8 col-md-6 col-xs-12"><input type="text" /> <input type="button" value="Apply"  class="btn btn-primary btn-md" style="width:100px;"  /> </div>
+		</div>
+		
+		<div class="row regpadding">
+			<div class="col-xs-6">SUBTOTAL</div>
+			<div class="col-xs-6">$ {{ getTotal(); }}</div>			
+		</div>
+		
+		<div class="row regpadding">
+			<div class="col-xs-6"><h3>PROMOTION CODE {{ couponCode }} APPLIED</h3></div>
+			<div class="col-xs-6"><h3>-${{discash}}</h3></div>			
+		</div>
+		
+		<div class="row regpadding">
+			<div class="col-xs-6">
+			<h3>ESTIMATED SHIPPING</h3>
+			<p>Your quality for free shipping because your order is over $50*</p>
+			</div>
+			<div class="col-xs-6"><h3>FREE</h3></div>			
+		</div>
+		
+		<div class="row regpadding brdtop">
+			<div class="col-xs-6"><h3>ESTIMATED TOTAL</h3>
+			<p>Tax will be applied during checkout  $30.00</p>
+			</div>
+			<div class="col-xs-6">${{estimate}}</div>			
+		</div>
+		
+		<div class="row regpadding">
+			<div class="col-md-12 col-lg-6"><h3><u>CONTINUE SHOPPING</u></h3></div>
+			<div class="col-md-12 col-lg-6"><input type="text" /> <input type="button" value="CHECKOUT" class="btn btn-primary btn-md" style="width:100px;" /></div>		
+		</div>
+		
+		
+		<div class="row regpadding">
+			<div class="col-xs-12"><p><img src="images/lock.jpg" />Secure checkout, shopping is always safe & secure</p></div>
+			 		
+		</div>
+		
+	</div>
+</div>
+
+</section>
+
+
+
+
+</div> <!-- Close of container -->
+
