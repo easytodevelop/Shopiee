@@ -37,7 +37,7 @@
               <p>Style #: {{ plist.p_style }}</p>
               <p>Colour: {{plist.p_selected_color.name}}</p>
               <ul class="hideinlow item_menu">
-                <li ng-click="open()">Edit |</li>
+                <li ng-click="open(plist)">Edit |</li>
                 <li><i class="fa fa-times" aria-hidden="true"></i>Remove |</li>
                 <li>Save for Later</li>
               </ul>
@@ -56,7 +56,7 @@
 
       <div class="hideinhigh row">
         <ul class="item_menu">
-          <li ng-click="open()">Edit |</li>
+          <li ng-click="open(plist)">Edit |</li>
           <li>Remove |</li>
           <li>Save for Later</li>
         </ul>
@@ -139,7 +139,7 @@
   </section>
 
 
-
+ <div class="btn btn-primary" ng-click="ok()">OK</div>
 
 </div>
 <!-- Close of container -->

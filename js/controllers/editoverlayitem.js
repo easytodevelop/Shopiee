@@ -1,4 +1,4 @@
-eshopApp.controller('editStudentData', function ($scope, addstudentData) {	
+eshopApp.controller('editShoptData', function ($scope, edtshopdata) {	
 	
 	
 	$scope.saveitem = function(studentinfo){

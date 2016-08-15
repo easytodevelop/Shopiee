@@ -35,15 +35,16 @@ eshopApp.controller('shopitems', function ($scope, $uibModal, shopdata, $log) {
     $scope.estimate = $scope.toTal - $scope.discash;
   }
 
-  $scope.open = function (size) {
-
+  $scope.open = function (size,plist) {
+		console.log(plist);
     var modalInstance = $uibModal.open({
       animation: true, // can also be set to 'false'
-      templateUrl: '/shopiee/templates/modal.html',
-      controller: 'ModalInstanceCtrl',
-      size: size,
+      templateUrl: '/sapient/shopiee/templates/overlay.html',
+      controller: 'editShoptData',
+	  size: size,
       resolve: {
-        items: function () {
+        plisting:plist,
+		items: function () {
           return $scope.items;
         }
       }
@@ -53,10 +54,12 @@ eshopApp.controller('shopitems', function ($scope, $uibModal, shopdata, $log) {
       $scope.selected = selectedItem;
     }, function () {
       $log.info('Modal dismissed at: ' + new Date());
-    });
+	  
+		});
   };
-}).controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, items) {
-
+}).controller('editShoptData', function ($scope, $uibModalInstance, items, plisting) {
+	
+  $scope.plist = plisting;
   $scope.items = items;
   $scope.selected = {
     item: $scope.items[0]
