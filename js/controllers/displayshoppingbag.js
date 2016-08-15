@@ -35,7 +35,7 @@ eshopApp.controller('shopitems', function ($scope, $uibModal, shopdata, $log) {
     $scope.estimate = $scope.toTal - $scope.discash;
   }
 
-  $scope.open = function (size,plist) {
+  $scope.open = function (plist) {
 		console.log(plist);
     var modalInstance = $uibModal.open({
       animation: true, // can also be set to 'false'
