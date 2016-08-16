@@ -40,7 +40,7 @@ eshopApp.controller('shopitems', function ($scope, $uibModal, shopdata, $log) {
       animation: true, // can also be set to 'false'
       templateUrl: '/shopiee/templates/overlay.html',
       controller: 'editShoptData',
-      resolve: {
+      resolve: { // This is where you pass variables to modal's controller. In this case, we pass plist's value as 'plisting' inside editShopDataController'
         plisting: function () {
           return plist;
         }
@@ -54,9 +54,9 @@ eshopApp.controller('shopitems', function ($scope, $uibModal, shopdata, $log) {
 
     });
   };
-}).controller('editShoptData', function ($scope, $uibModalInstance, plisting) {
+}).controller('editShoptData', function ($scope, $uibModalInstance, plisting) { // notice that the resolved variable passed here started from the third parameter
 
-  $scope.plist = plisting;
+  $scope.plist = plisting; // We assign plisting's value to local $scope. The $scope is only accessible inside this controller.
 
   $scope.ok = function () {
     $uibModalInstance.close($scope.selected.item);
