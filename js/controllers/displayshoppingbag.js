@@ -6,8 +6,6 @@ eshopApp.controller('shopitems', function ($scope, $uibModal, shopdata, $log) {
 
   // initialize
   $scope.shopinfo = [];
-  // For dialog
-  $scope.items = ['item1', 'item2', 'item3'];
 
   $scope.getTotal = function () {
     var total = 0;
@@ -36,16 +34,15 @@ eshopApp.controller('shopitems', function ($scope, $uibModal, shopdata, $log) {
   }
 
   $scope.open = function (plist) {
-		console.log(plist);
+    console.log(plist);
+    $scope.selectedItem = plist;
     var modalInstance = $uibModal.open({
       animation: true, // can also be set to 'false'
-      templateUrl: '/sapient/shopiee/templates/overlay.html',
+      templateUrl: '/shopiee/templates/overlay.html',
       controller: 'editShoptData',
-	  size: size,
       resolve: {
-        plisting:plist,
-		items: function () {
-          return $scope.items;
+        plisting: function () {
+          return plist;
         }
       }
     });
@@ -54,16 +51,12 @@ eshopApp.controller('shopitems', function ($scope, $uibModal, shopdata, $log) {
       $scope.selected = selectedItem;
     }, function () {
       $log.info('Modal dismissed at: ' + new Date());
-	  
-		});
+
+    });
   };
-}).controller('editShoptData', function ($scope, $uibModalInstance, items, plisting) {
-	
+}).controller('editShoptData', function ($scope, $uibModalInstance, plisting) {
+
   $scope.plist = plisting;
-  $scope.items = items;
-  $scope.selected = {
-    item: $scope.items[0]
-  };
 
   $scope.ok = function () {
     $uibModalInstance.close($scope.selected.item);

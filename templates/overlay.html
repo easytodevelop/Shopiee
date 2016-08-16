@@ -1,36 +1,31 @@
-<div  layout="row" ng-cloak style="height: 500px; padding:30px;">
-  {{plist.p_name}}
- 
+<div layout="row" ng-cloak style="height: 500px; padding:30px;">
   <div class="row">
-	<div class="col-lg-6 ">
-	<hr />
-	<p>PAISELYE JEAN</p>
-	<p>$<span>21</spn></p>
-	<p>Paisley</p>
-	<select>
-		<option value="">Size</option>
-		<option>32</option>
-		<option>33</option>
-		<option>34</option>
-		<option>35</option>
-		<option>36</option>
-	</select>
-	<select>
-		<option value="">Size</option>
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-		<option>4</option>
-		<option>5</option>
-	</select>
-	<p><button type="button" class="btn btn-primary" >ADD TO BAG</button></p>
-	<p>See product details</p>
-	</div>
-	<div class="col-lg-6">
-		<img src="images/T1.jpg" />
-	</div>
+    <div class="col-lg-6 ">
+      <p></p>
+      <p>$<span>{{plist.p_originalprice}}</span></p>
+      <p>{{plist.p_name}}</p>
+      <p><button type="button" class="btn btn-primary">ADD TO BAG</button></p>
+      <p>See product details</p>
+    </div>
+    <div class="col-lg-6">
+      <img src="images/T1.jpg" />
+    </div>
+    <select>
+      <option>Size</option>
+      <option>32</option>
+      <option>33</option>
+      <option>34</option>
+      <option>35</option>
+      <option>36</option>
+    </select>
+    <select>
+      <option value="">Size</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
   </div>
-  
-  
   <button type="button" class="btn btn-default" ng-click="cancel()">Close</button>
 </div>
